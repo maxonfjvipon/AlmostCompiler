@@ -1,0 +1,173 @@
+SECTION .data
+a: resd 1
+b: resd 1
+c: resd 1
+
+SECTION .text
+global func
+global main
+
+func:
+call exp0
+ret
+
+main:
+call exp1
+mov b, eax
+call exp2
+mov c, eax
+call exp3
+call exp4
+
+WHILE0:
+.CMP0
+call exp5
+cmp eax, 1
+jne .wfalse0
+
+IF0:
+call exp6
+cmp eax, 1
+jne .ifalse0
+call exp7
+.ifalse0:
+
+ELSE0:
+
+IF1:
+call exp8
+cmp eax, 1
+jne .ifalse1
+call exp9
+.ifalse1:
+
+ELSE1:
+call exp10
+
+IF2:
+call exp11
+cmp eax, 1
+jne .ifalse2
+call exp12
+.ifalse2:
+jmp .CMP0
+.wfalse0:
+call exp13
+ret
+
+exp0:
+mov eax, 1
+push eax
+mov eax, 1
+pop ecx
+add eax, ecx
+ret
+
+exp1:
+mov eax, 4
+ret
+
+exp2:
+mov eax, 0
+ret
+
+exp3:
+mov eax, 2
+push eax
+mov eax, 3
+pop ecx
+imul ecx
+mov b, eax
+ret
+
+exp4:
+call func
+ret
+
+exp5:
+mov eax, b
+push eax
+mov eax, a
+pop ecx
+cmp ecx, eax
+jbe .false
+mov eax, 1
+ret
+.false:
+mov eax,0
+ret
+
+exp6:
+mov eax, c
+push eax
+mov eax, a
+pop ecx
+cmp ecx, eax
+jae .false
+mov eax, 1
+ret
+.false:
+mov eax,0
+ret
+
+exp7:
+mov eax, c
+push eax
+mov eax, 1
+pop ecx
+add eax, ecx
+mov c, eax
+ret
+
+exp8:
+mov eax, c
+push eax
+mov eax, a
+pop ecx
+cmp ecx, eax
+jbe .false
+mov eax, 1
+ret
+.false:
+mov eax,0
+ret
+
+exp9:
+mov eax, c
+push eax
+mov eax, 2
+pop ecx
+add eax, ecx
+mov c, eax
+ret
+
+exp10:
+mov eax, c
+push eax
+mov eax, 3
+pop ecx
+add eax, ecx
+mov c, eax
+ret
+
+exp11:
+mov eax, a
+push eax
+mov eax, b
+pop ecx
+cmp ecx, eax
+jbe .false
+mov eax, 1
+ret
+.false:
+mov eax,0
+ret
+
+exp12:
+call func
+ret
+
+exp13:
+mov eax, a
+ret
+

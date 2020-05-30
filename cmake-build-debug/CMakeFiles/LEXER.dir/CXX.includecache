@@ -1,0 +1,64 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/Compiler.h
+fstream
+-
+iostream
+-
+Node.h
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/Node.h
+Parser.h
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/Parser.h
+
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/Lexer.h
+map
+-
+set
+-
+fstream
+-
+iostream
+-
+lexemtype.h
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/lexemtype.h
+
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/Node.h
+nodekind.h
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/nodekind.h
+iostream
+-
+vector
+-
+
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/Parser.h
+Lexer.h
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/Lexer.h
+Node.h
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/Node.h
+
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/lexemtype.h
+
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/main.cpp
+fstream
+-
+set
+-
+iomanip
+-
+Parser.h
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/Parser.h
+Compiler.h
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/Compiler.h
+nodekind.h
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/nodekind.h
+random
+-
+
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/nodekind.h
+

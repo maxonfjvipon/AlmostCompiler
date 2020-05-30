@@ -1,0 +1,3 @@
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/maksimtrunnikov/Google Диск/02 programming/03 с++_projects/LEXER/cmake-build-debug/CMakeFiles/LEXER.dir
