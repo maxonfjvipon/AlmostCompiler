@@ -10,6 +10,7 @@
 1. OOP constructions
 2. Input/Output functions and operators
 3. Math operators that contains of 2 characters like ++, --, /=, ==, *= ect
+4. Mb someting else :D
 
 ### How it can be used
 I think it will be a good and clear explanation and how-to for guys, who want to write a compiler or want to understand how it truly works.
